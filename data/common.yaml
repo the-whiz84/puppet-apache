@@ -6,3 +6,6 @@ apache::config_path: '/etc/httpd/conf/httpd.config'
 apache::service_name: 'httpd'
 apache::service_ensure: 'running'
 apache::service_enable: true
+apache::vhosts_dir: '/etc/httpd/conf.d'
+apache::vhosts_owner: 'apache'
+apache::vhosts_group: 'apache'
